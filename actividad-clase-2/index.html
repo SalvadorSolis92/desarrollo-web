@@ -7,70 +7,79 @@
         <title>Práctica 2A</title>
     </head>
     <body>
-        <form action="submit">
-            <fieldset>
-                <legend>Datos Personales</legend>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required minlength="4" placeholder="Escribe tu nombre completo"/>
-
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" required min="1" max="120"/>
-
+        <div class="form-container">
+            <form action="submit">
+                <h1>Formulario de Actividad 2B</h1>
                 <fieldset>
-                    <legend>Género:</legend>
-                    <div>
-                        <input type="radio" id="genero" name="genero" value="Femenino" />
-                        <label for="genero">Femenino</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="genero" name="genero" value="Masculino" />
-                        <label for="genero">Masculino</label>
-                    </div>
-                </fieldset>
-            </fieldset>
-            <fieldset>
-                <legend>Preguntas</legend>
-                <fieldset for="pregunta1">
-                    <legend>¿Cuál es tu sistema operativo favorito?</legend>
-                    <div>
-                        <input type="radio" id="pregunta1" name="pregunta1" value="windows" />
-                        <label for="genero">Windows</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="pregunta1" name="pregunta1" value="macos" />
-                        <label for="genero">MacOS</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="pregunta1" name="pregunta1" value="linux" />
-                        <label for="genero">Linux</label>
-                    </div>
+                    <legend>Datos Personales</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required minlength="4" placeholder="Escribe tu nombre completo"/>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required min="1" max="120" placeholder="Años cumplidos a la fecha actual"/>
+
+                    <fieldset>
+                        <legend>Género:</legend>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="genero" name="genero" value="Femenino" />
+                                <label>Femenino</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="genero" name="genero" value="Masculino" />
+                                <label>Masculino</label>
+                            </div>
+                        </div>
+                    </fieldset>
                 </fieldset>
                 <fieldset>
-                    <legend>¿Qué tecnologías utilizas? (Selecciona todas las que correspondan):</legend>
-                    <div>
-                        <input type="checkbox" id="tech" name="tech" value="html" checked />
-                        <label for="tech">HTML</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="tech" name="tech" value="css" />
-                        <label for="tech">CSS</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="tech" name="tech" value="javascript" />
-                        <label for="tech">Javascript</label>
-                    </div>
+                    <legend>Preguntas</legend>
+                    <fieldset for="pregunta1">
+                        <legend>¿Cuál es tu sistema operativo favorito?</legend>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="pregunta1" name="pregunta1" value="windows" />
+                                <label>Windows</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="pregunta1" name="pregunta1" value="macos" />
+                                <label>MacOS</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="pregunta1" name="pregunta1" value="linux" />
+                                <label>Linux</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>¿Qué tecnologías utilizas? (Selecciona todas las que correspondan):</legend>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="tech" name="tech" value="html" checked />
+                                <label for="tech">HTML</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="tech" name="tech" value="css" />
+                                <label for="tech">CSS</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="tech" name="tech" value="javascript" />
+                                <label for="tech">Javascript</label>
+                            </div>
+                        </div>
+                    </fieldset>
                 </fieldset>
-            </fieldset>
-            <fieldset>
-                <legend>Comentarios Finales</legend>
-                <label for="comments">Escribe tus comentarios finales</label>
-                <textarea name="comments" id="comments" rows="5" cols="33"></textarea>
-            </fieldset>
+                <fieldset>
+                    <legend>Comentarios Finales</legend>
+                    <label for="comments">Escribe tus comentarios finales</label>
+                    <textarea name="comments" id="comments" rows="5" cols="33"></textarea>
+                </fieldset>
 
-            <div class="button-container">
-                <button type="submit">Enviar</button>
-            </div>
+                <div class="button-container">
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </div>
 
-        </form>
+            </form>
+        </div>
     </body>
 </html>
